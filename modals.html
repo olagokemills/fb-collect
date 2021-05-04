@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailsModal">
+    Transaction details modal
+  </button>
+
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#limitModal">
+    Transaction Limit modal
+  </button>
+  
+  <!--Transaction details -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+            <h4>Transaction Details</h4>
+            <div class="p-3">
+                <table>
+                    <tr>
+                        <td>DATE</td>
+                        <td>12-01-2021</td>
+                    </tr>
+                    <tr>
+                        <td>ACCOUNT NUMBER</td>
+                        <td>001237311</td>
+                    </tr>
+                    <tr>
+                        <td>PROVIDER</td>
+                        <td>Dangote PLC</td>
+                    </tr>
+                    <tr>
+                        <td>MERCHANT</td>
+                        <td>MCT ENTERPRISE</td>
+                    </tr>
+                    <tr>
+                        <td>DESCRIPTION</td>
+                        <td>DEALER 45290 CEMENT</td>
+                    </tr>
+                    <tr>
+                        <td>AMOUNT</td>
+                        <td>55,000.00</td>
+                    </tr>
+                </table>
+
+                <div class="d-flex justify-content-center">
+                    <div class="p-3">
+                        <button class="btn btn-success">Approve</button>
+                    </div>
+                    <div class="p-3">
+                        <button class="btn btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--End-->
+
+<!--Set Limit Modal-->
+<div class="modal fade" id="limitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+            <h4>Set Transaction Limit</h4>
+            <div class="p-3">
+               <form>
+                   <div class="form-group form-row">
+                        <div class="col-sm">
+                            <label>Current Limit</label>
+                        </div>
+                        <div class="col-sm">
+                            <small>N2,000,000</small>
+                        </div>
+                   </div>
+                    <div class="form-group form-row">
+                        <div class="col-sm">
+                            <label>Current Limit</label>
+                        </div>
+                        <div class="col-sm">
+                            <input class="form-control" type="text" placeholder="Enter new transaction amount">
+                        </div>
+                    </div>
+               </form>
+
+                <div class="d-flex justify-content-center">
+                    <div class="p-3">
+                        <button class="btn btn-success">Save</button>
+                    </div>
+                    <div class="p-3">
+                        <button class="btn btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
